@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../CSS/FAQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header id="tete">
+        <a id="logo" href="#"><img src="../Documents/logo-2.png"></a>
+        <h1 id="titre-principale">F.A.Q.</h1>
+        <nav id="burger">
+            <label for="toggle" id="burger-label">☰</label>
+            <input type="checkbox" id="toggle">
+            <div id="menu-burger">
+                <a href="page1.html">ACCUEIL</a>
+                <a href="actu.html">ACTUALITE</a>
+                <a href="projet.html">LE PROJET</a>
+                <a href="../PHP/login.php">CONNEXION</a>
+            </div>
+        </nav>
+    </header>
+
+   
+
+    <main id="main-faq">
+        <input id="searchbar" onkeyup="search_article()" type="text" name="search" placeholder="Rechercher un article..">
+        <section class="questions">
+            <h2>Le projet est-il étanche ?</h2>
+            <p>OUI ! Grâce à ses matériaux et à sa conception, le projet T.R.E est parfaitement étanche face à la pluie.<br><br>En revanche, il est strictement interdit de projeter intentionnellement de l'eau sur ses différents éléments.</p>
+        </section>
+        <section class="questions">
+            <h2>Quel est le poids maximal sur la table ?</h2>
+            <p>Le poids maximal théorique a grandement été réduit par rapport à une table normale en raison des panneaux solaires situés en dessous. Ce qui amène le tout a 50kg max sur le dessus.</p>
+        </section>
+        <section class="questions">
+            <h2>Quel est l’autonomie de la batterie ?</h2>
+            <p>Selon les informations fournies par le site officiel EcoFlow, la batterie offre une autonomie suffisante pour recharger un téléphone jusqu'à 20 fois dans des conditions où la batterie n'est pas rechargée, telles que lors de fortes pluies ou de chutes de neige.
+            <br><br>En utilisation normale, la batterie ne devrait jamais être complètement déchargée grâce aux panneaux solaires intégrés, assurant ainsi une alimentation continue même lors de conditions météorologiques défavorables.</p>
+        </section>
+        <section class="questions">
+            <h2>Les matériaux utilisés sont-ils écologiques ?</h2>
+            <p>Absolument. Chaque matériau a été méticuleusement choisi pour garantir que le projet T.R.E soit le plus respectueux de l'environnement possible. Chaque élément, des fondations aux finitions, est conçu en tenant compte de son empreinte écologique, contribuant ainsi à la durabilité et à la responsabilité environnementale du projet.</p>
+        </section>
+        <section class="questions">
+            <h2>Est-ce que les produit sont français ?</h2>
+            <p>Oui, dans le souci de proposer un projet écoresponsable, la plupart des produits sont de fabrication locale. Seuls les produits de la marque Ecoflow ont été importés.</p>
+        </section>
+        <section class="questions">
+            <h2>Quelle est la durabilité du projet ?</h2>
+            <p>La durabilité du projet est maximale. Chaque élément a été sélectionné pour résister aux conditions extérieures, et la structure a été conçue pour être rapidement remplacée si nécessaire, garantissant ainsi une durabilité à long terme.</p>
+        </section>
+        <section class="questions">
+            <h2>Comment contacter le service client ?</h2>
+            <p>Vous pouvez nous contacter via les différents réseaux sociaux disponibles dans le bandeau d'informations ci-dessous.</p>
+        </section>
+    </main>
+    <footer id="pied">
+        <div id="foot-carte" class="grid-container">
+            <div id="infos" class="foot-grille">
+                <p>
+                    <p id="titre-infos">Informations</p>
+                    <p><a href="https://www.google.com/maps/dir//Le+Marais+Sainte+Th%C3%A9r%C3%A8se,+48+Bd+Thiers,+42000+Saint-%C3%89tienne/@45.4515555,4.3870314,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f5ac0f6c0b7ecb:0xb15f127841a3f058!2m2!1d4.3896063!2d45.4515555?entry=ttu" target="_blank">
+                        Le Marais Sainte Thérèse,
+                        <br> 48 Bd Thiers, 42000 Saint-Étienne
+                        <br>
+                        <br><a href="https://www.linkedin.com/in/nolan-liogier-105323278">© 2024 - Nolan LIOGIER<br>Tous droits réservés</a> 
+                        </a></p>
+                </p>
+                    <ul id="icones">
+                        <li>
+                            <a class="lien-icones" href="https://www.instagram.com/recharge.eu">
+                                <i class="fab fa-instagram"></i> 
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lien-icones" href="https://www.youtube.com/@RE-charge-EU?si=C68HS7-RxztVyuKz">
+                                <i class="fab fa-youtube"></i> 
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lien-icones" href="mailto:r.e.charge.eu@gmail.com">
+                                <i class="far fa-envelope"></i> 
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lien-icones" href="tel:+33645124059">
+                                <i class="fas fa-phone"></i> 
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="foot-grille" id="menu-footer">
+                <a href="#">HAUT DE PAGE</a>
+                <a href="page1.html">ACCUEIL</a>
+                <a href="actu.html">ACTUALITE</a>
+                <a href="projet.html">LE PROJET</a>
+                <a href="../PHP/login.php">CONNEXION</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // JavaScript code
+      function search_article() {
+          let input = document.getElementById('searchbar').value
+          input=input.toLowerCase();
+          let x = document.getElementsByClassName('questions');
+            
+          for (i = 0; i < x.length; i++) { 
+              if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                  x[i].style.display="none";
+              }
+              else {
+                  x[i].style.display="list-item";                 
+              }
+          }
+      }
+      </script>
+</body>
+</html>
